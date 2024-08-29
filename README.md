@@ -1,7 +1,6 @@
 
 
-# Build-and-Deploy-Ecommerce-Website-With-HTML-CSS-JavaScript ![LogoEmpresaMacrameAventura](https://github.com/user-attachments/assets/ceacc7d3-f556-4b2e-9d2d-6d655ffd8934)
-
+# Build-and-Deploy-Ecommerce-Website-With-HTML-CSS-JavaScript 
 ## About this course
 
 I LEARN HOW TO BUILD AND DEPLOY FULLY RESPONSIVE E-COMMERCE WEBSITE USING HTML CSS & JAVASCRIPT. This is a free HTML CSS Course that I find on YouTube. And in this course, I learned how to build and deploy a full multipage e-commerce website completely from scratch, step by step. I created from responsive navbar using HTML CSS JavaScript to responsive footer in one video.
