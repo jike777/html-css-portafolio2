@@ -1,4 +1,6 @@
-# Build-and-Deploy-Ecommerce-Website-With-HTML-CSS-JavaScript
+
+
+# Build-and-Deploy-Ecommerce-Website-With-HTML-CSS-JavaScript ![LogoEmpresaMacrameAventura](https://github.com/user-attachments/assets/ceacc7d3-f556-4b2e-9d2d-6d655ffd8934)
 
 ## About this course
 
