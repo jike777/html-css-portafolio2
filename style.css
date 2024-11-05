@@ -78,6 +78,8 @@ body {
   width: 100%;
 }
 
+.logo {}
+
 /* Header Start */
 
 #header {
@@ -88,7 +90,7 @@ body {
   background: #E3E6F3;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
   z-index: 999;
-  position: sticky;
+  position: relative;
   top: 0;
   left: 0;
 }
@@ -148,11 +150,13 @@ body {
 /* Home Page */
 
 #hero {
-  background-image: url("img/hero5.png");
+  background-image: url("img/hero5.webp");
   height: 90vh;
   width: 100%;
-  background-size: cover;
-  background-position: top 25% right 0%;
+  background-size: contain;
+  background-color: #cee4e5;
+  background-repeat: no-repeat;
+  background-position: center right;
   padding: 0 80px;
   display: flex;
   flex-direction: column;
@@ -169,7 +173,7 @@ body {
 }
 
 #hero button {
-  background-image: url("img/button.png");
+  background-image: url("img/button.webp");
   background-color: transparent;
   color: #088178;
   border: 0;
@@ -178,6 +182,12 @@ body {
   cursor: pointer;
   font-weight: 700;
   font-size: 15px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#hero button:hover {
+  transform: scale(1.1); /* Agranda el botón al 110% de su tamaño original */
+  color: #fff; /* Cambia el color del texto al pasar el cursor */
 }
 
 #feature {
@@ -316,7 +326,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-image: url(img/banner/b2.jpg);
+  background-image: url(img/banner/b2.webp);
   width: 100%;
   height: 40vh;
   background-size: cover;
@@ -356,7 +366,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  background-image: url(img/banner/b17.png);
+  background-image: url(img/banner/b17.webp);
   min-width: 650px;
   height: 50vh;
   background-size: cover;
@@ -365,7 +375,7 @@ body {
 }
 
 #sm-banner .banner-box2 {
-  background-image: url(img/banner/b10\ \(2\).png);
+  background-image: url(img/banner/b10.webp);
 
 }
 
@@ -405,7 +415,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  background-image: url(img/banner/b7.png);
+  background-image: url(img/banner/b7.webp);
   min-width: 30%;
   height: 30vh;
   background-size: cover;
@@ -415,11 +425,11 @@ body {
 }
 
 #banner3 .banner-box2 {
-  background-image: url(img/banner/b4.png);
+  background-image: url(img/banner/b4.webp);
 }
 
 #banner3 .banner-box3 {
-  background-image: url(img/banner/b18.png);
+  background-image: url(img/banner/b18.webp);
 }
 
 #banner3 h2 {
@@ -439,7 +449,7 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
-  background-image: url("img/banner/b14.png");
+  background-image: url("img/banner/b14.webp");
   background-repeat: no-repeat;
   background-position: 20% 30%;
   background-color: #041e42;
@@ -556,10 +566,10 @@ footer .copyright {
 
 
 #page-header {
-  background-image: url("img/banner/b7.png");
-  background-size: 100%;
+  background-image: url("img/banner/b7.webp");
+  background-size: cover;
   width: 100%;
-  height: 390px;
+  height: 90vh;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -570,7 +580,8 @@ footer .copyright {
 
 #page-header h2,
 #page-header p {
-  color: #ffffff;
+  color: #f7f5f5;
+  text-align: left;
 }
 
 #pagination {
@@ -669,7 +680,7 @@ footer .copyright {
 /* Blog page */
 
 #page-header.blog-header {
-  background-image: url("img/banner/b19.jpg");
+  background-image: url("img/banner/b19.webp");
   background-size: 100%;
   width: 100%;
   height: 300px;
@@ -749,7 +760,7 @@ footer .copyright {
 
 
 #page-header.about-header {
-  background-image: url("img/about/banner.png");
+  background-image: url("img/about/banner.webp");
 }
 
 #about-head {
@@ -1084,9 +1095,14 @@ footer .copyright {
 
   #hero {
     height: 70vh;
-    padding: 0 80px;
-    background-position: top 30% right 30%;
+    width: 100%;
+    padding: 0 20px; /* Reduce el padding si es necesario */
+    background-size: cover; /* O usa `contain` si es necesario que no se corte en absoluto */
+    background-position: right center; /* Ajusta la posición hacia la derecha */
   }
+
+
+
 
   #feature {
     justify-content: center;
@@ -1198,7 +1214,7 @@ footer .copyright {
   /*Shop header image*/
 
   #page-header {
-    background-image: url("img/banner/b7.png");
+    background-image: url("img/banner/b7.webp");
     background-size: cover;
     background-position: center;
 
@@ -1230,7 +1246,7 @@ footer .copyright {
 /* @media Blog header image*/
 
 #page-header.blog-header {
-  background-image: url("img/banner/b19.jpg");
+  background-image: url("img/banner/b19.webp");
   background-size: cover;
   background-position: center;
 
