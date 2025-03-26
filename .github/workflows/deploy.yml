@@ -11,7 +11,7 @@ jobs:
 
     steps:
       - name: 📂 Checkout del código
-        uses: actions/checkout@v4 # ✅ Corregido
+        uses: actions/checkout@v3 # ✅ Corregido
 
       - name: 🔧 Configurar Node.js
         uses: actions/setup-node@v3
