@@ -34,6 +34,22 @@
               ><i class="far fa-shopping-cart"></i
             ></a>
           </li>
+          <!-- ✅ Aquí se mostrará el usuario cuando inicie sesión -->
+          <!-- <li id="user-info" style="display: none">
+            <span id="user-name"></span>
+            <a href="#" id="logout-btn">Cerrar sesión</a>
+          </li> -->
+          <!-- 🔽 Nuevo menú desplegable de usuario -->
+          <li id="user-menu" class="dropdown" style="display: none">
+            <span id="user-name" class="dropdown-toggle">Usuario ▼</span>
+            <ul class="dropdown-menu">
+              <li><a href="#">Mi cuenta</a></li>
+              <li><a href="#">Mis pedidos</a></li>
+              <li><a href="#">Configuración</a></li>
+              <li><a href="#" id="logout-btn">Cerrar sesión</a></li>
+            </ul>
+          </li>
+
           <a href="#" id="close"><i class="far fa-times"></i></a>
         </ul>
       </div>
@@ -135,15 +151,17 @@
         <table>
           <tr>
             <td>Subtotal del Carrito</td>
-            <td>$120000</td>
+            <td id="subtotal-carrito">$0</td>
+            <!-- Agregado id -->
           </tr>
           <tr>
-            <td>Envio</td>
+            <td>Envío</td>
             <td>Free</td>
           </tr>
           <tr>
             <td><strong>Total</strong></td>
-            <td><strong>$120000</strong></td>
+            <td><strong id="total-carrito">$0</strong></td>
+            <!-- Agregado id -->
           </tr>
         </table>
         <button class="normal">Proceda con su compra</button>
@@ -204,6 +222,10 @@
         <p>© 2023. Tienda Juan Salvador Cortes Rodriguez</p>
       </div>
     </footer>
-    <script src="script.js"></script>
+    <!-- ✅ Importar configuración de Firebase (Siempre antes que otros scripts) -->
+    <script type="module" src="firebase-config.js"></script>
+    <!-- ✅ Script principal (Es módulo, `type="module"`) -->
+    <script type="module" src="script.js"></script>
+    <script src="cart.js"></script>
   </body>
 </html>

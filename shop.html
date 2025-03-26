@@ -29,6 +29,11 @@
           <li><a href="blog.html">Blog</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
+          <!-- ✅ Aquí se mostrará el usuario cuando inicie sesión -->
+          <li id="user-info" style="display: none">
+            <span id="user-name"></span>
+            <a href="#" id="logout-btn">Cerrar sesión</a>
+          </li>
           <li id="lg-bag">
             <a href="cart.html"><i class="far fa-shopping-cart"></i></a>
           </li>
@@ -54,7 +59,7 @@
 
     <section id="product1" class="section-p1">
       <div class="pro-container">
-        <div class="pro" onclick="window.location.href='sproduct.html'">
+        <div class="pro" onclick="window.location.href='product.html'">
           <img src="img/products/f1.webp" alt="first product" />
           <div class="des">
             <span>Morrales Quechua</span>
@@ -536,7 +541,15 @@
         <p>© 2023. Tienda Juan Salvador Cortes Rodriguez</p>
       </div>
     </footer>
+    <!-- ✅ Importar configuración de Firebase (Siempre antes que otros scripts) -->
+    <script type="module" src="firebase-config.js"></script>
 
-    <script src="script.js"></script>
+    <!-- ✅ Script del carrito (No es módulo, usa `defer`) -->
+    <script src="cart.js" defer></script>
+
+    <!-- ✅ Script principal (Es módulo, `type="module"`) -->
+    <script type="module" src="script.js"></script>
+    <script src="shop.js"></script>
+    <!--<script src="script.js"></script>-->
   </body>
 </html>

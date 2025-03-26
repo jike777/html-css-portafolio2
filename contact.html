@@ -29,6 +29,11 @@
           <li><a href="blog.html">Blog</a></li>
           <li><a href="about.html">About</a></li>
           <li><a class="active" href="contact.html">Contact</a></li>
+          <!-- ✅ Aquí se mostrará el usuario cuando inicie sesión -->
+          <li id="user-info" style="display: none">
+            <span id="user-name"></span>
+            <a href="#" id="logout-btn">Cerrar sesión</a>
+          </li>
           <li id="lg-bag">
             <a href="cart.html"><i class="far fa-shopping-cart"></i></a>
           </li>
@@ -237,7 +242,9 @@
         <p>© 2023. Tienda Juan Salvador Cortes Rodriguez</p>
       </div>
     </footer>
-
-    <script src="script.js"></script>
+    <!-- ✅ Importar configuración de Firebase (Siempre antes que otros scripts) -->
+    <script type="module" src="firebase-config.js"></script>
+    <!-- ✅ Script principal (Es módulo, `type="module"`) -->
+    <script type="module" src="script.js"></script>
   </body>
 </html>

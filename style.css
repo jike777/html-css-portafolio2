@@ -132,6 +132,67 @@ body {
 
 }
 
+/* ✅ Ajuste del menú de usuario para alinearse con el navbar */
+#user-menu {
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* ✅ Estilo del texto del usuario */
+#user-menu .dropdown-toggle {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1a1a1a;
+  padding: 10px 20px;
+  transition: 0.3s ease;
+}
+
+#user-menu .dropdown-toggle:hover {
+  color: #088178;
+}
+
+/* ✅ Estilo del dropdown */
+#user-menu .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: white;
+  list-style: none;
+  padding: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  min-width: 180px;
+  text-align: left;
+  z-index: 1000;
+}
+
+/* ✅ Mostrar menú al pasar el mouse */
+#user-menu:hover .dropdown-menu {
+  display: block;
+}
+
+/* ✅ Estilo de los elementos del dropdown */
+#user-menu .dropdown-menu li {
+  padding: 8px 0;
+}
+
+#user-menu .dropdown-menu a {
+  text-decoration: none;
+  color: #1a1a1a;
+  display: block;
+  padding: 8px 15px;
+  transition: 0.3s ease;
+}
+
+#user-menu .dropdown-menu a:hover {
+  background: #f0f0f0;
+  color: #088178;
+}
+
+
 #mobile {
   display: none;
   align-items: center;
@@ -145,7 +206,52 @@ body {
   cursor: pointer;
 }
 
+/* Contenedor más compacto y bien centrado */
+#auth-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
 
+
+#auth-section {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.8);
+  /* Ligera transparencia */
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8px);
+  width: 350px;
+  /* Más pequeño */
+}
+
+/* Título más compacto */
+#auth-section h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #3a506b;
+  margin-bottom: 15px;
+}
+
+/* Botón con ajuste de tamaño */
+#login-btn {
+  background-color: #3a86ff;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+#login-btn:hover {
+  background-color: #295bb0;
+  transform: scale(1.05);
+}
 
 /* Home Page */
 
@@ -186,8 +292,10 @@ body {
 }
 
 #hero button:hover {
-  transform: scale(1.1); /* Agranda el botón al 110% de su tamaño original */
-  color: #fff; /* Cambia el color del texto al pasar el cursor */
+  transform: scale(1.1);
+  /* Agranda el botón al 110% de su tamaño original */
+  color: #fff;
+  /* Cambia el color del texto al pasar el cursor */
 }
 
 #feature {
@@ -355,28 +463,70 @@ body {
 }
 
 #sm-banner {
+  /*display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  /* Adds space between the two banners */
+  /*padding: 20px;
+  /* Adds padding to the entire section */
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding: 0 20px;
 
 }
 
 #sm-banner .banner-box {
+  /*display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-image: url(img/banner/b17.webp);
+  width: 100vw;
+
+  /* Ensure it takes the full width of the viewport */
+  /*height: 50vh;
+  /* You can adjust this to make the section taller or shorter */
+  /*background-size: 100% auto;
+  /* Ensures the image covers the entire container */
+  /*background-position: center;
+  /* Centers the image */
+  /*background-repeat: no-repeat;
+  /* Prevents the image from repeating */
+  /* padding: 30px;
+  box-sizing: border-box;*/
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   background-image: url(img/banner/b17.webp);
-  min-width: 650px;
-  height: 50vh;
+  min-width: 100%;
+  height: 60vh;
   background-size: cover;
   background-position: center;
-  padding: 30px;
+  padding: 20px;
+  margin-bottom: 20px;
+
+
 }
 
-#sm-banner .banner-box2 {
-  background-image: url(img/banner/b10.webp);
 
+/*#sm-banner .banner-box2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-image: url(img/banner/b17.webp);
+  width: 100vw;
+  height: 70vh;
+  background-size: 200%;
+  background-position: center;
+  padding: 30px;
+}*/
+
+#sm-banner .banner-box2 {
+  background-image: url(img/banner/b10\(3\).jpg);
 }
 
 #sm-banner h4 {
@@ -910,6 +1060,21 @@ footer .copyright {
 
 /* CART PAGE*/
 
+#cart-page-header {
+  background-image: url("img/banner/b7.webp");
+  /* Imagen específica para cart.html */
+  background-size: cover;
+  width: 100%;
+  height: 5vh;
+  /* Solo cart.html tendrá 5% de altura */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  text-align: center;
+}
+
+
 #cart {
   overflow-x: auto;
 }
@@ -922,12 +1087,28 @@ footer .copyright {
 }
 
 #cart table img {
-  width: 70px;
+  width: 150px;
+  /* Aumenta el tamaño */
+  height: auto;
+  /* Mantiene la proporción */
+  border-radius: 10px;
+  /* Suaviza las esquinas */
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  /* Agrega una sombra suave */
 }
 
+#cart table img:hover {
+  transform: scale(1.1);
+  transition: 0.3s ease-in-out;
+}
+
+
 #cart table td:nth-child(1) {
-  width: 100px;
+  width: 180px;
+  /* Ajusta el ancho */
   text-align: center;
+  padding: 10px 0;
+  /* Agrega espacio arriba y abajo */
 }
 
 #cart table td:nth-child(2) {
@@ -1096,12 +1277,17 @@ footer .copyright {
   #hero {
     height: 70vh;
     width: 100%;
-    padding: 0 20px; /* Reduce el padding si es necesario */
-    background-size: cover; /* O usa `contain` si es necesario que no se corte en absoluto */
-    background-position: right center; /* Ajusta la posición hacia la derecha */
+    padding: 0 20px;
+    /* Reduce el padding si es necesario */
+    background-size: cover;
+    /* O usa `contain` si es necesario que no se corte en absoluto */
+    background-position: right center;
+    /* Ajusta la posición hacia la derecha */
   }
 
-
+  #newslatter .form {
+    width: 100%;
+  }
 
 
   #feature {
@@ -1120,12 +1306,42 @@ footer .copyright {
     margin: 15px;
 
   }
-
-
-
 }
 
 /* home page */
+
+/* Tablets */
+
+@media (max-width: 1138px) {
+  #banner3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* Asegura centrado */
+    align-items: center;
+    /* Alinea verticalmente */
+    padding: 0 40px;
+    /* Reduce el padding */
+  }
+
+  #banner3 .banner-box {
+    width: 100% !important;
+    /* Ocupa el 100% del contenedor */
+    height: 35vh;
+    /* Ajusta la altura */
+    background-size: cover !important;
+    /* Asegura que la imagen cubra */
+    background-position: center !important;
+    /* Centra la imagen */
+  }
+
+  #banner3 .banner-box3 {
+    background-size: cover !important;
+    /* Unifica con los otros banners */
+    background-position: center center !important;
+    background-repeat: no-repeat;
+  }
+}
 
 /* Tablets */
 @media (max-width: 768px) {
@@ -1139,15 +1355,10 @@ footer .copyright {
     height: 30vh;
   }
 
-  #banner3 .banner-box {
-    min-width: 48%;
-  }
-
-  #newslatter .form {
-    width: 70%;
+  #sm-banner.banner-box.banner-box2 {
+    background-size: 100% auto;
   }
 }
-
 
 
 /*smart phones*/
@@ -1188,11 +1399,14 @@ footer .copyright {
   }
 
   #sm-banner .banner-box {
-    height: 40vh;
+    width: 100%;
   }
 
-  #sm-banner .banner-box2 {
-    margin-top: 20px;
+
+  #sm-banner.banner-box.banner-box2 {
+    width: 100% !important;
+    height: 70vh !important;
+
   }
 
   #banner3 {
@@ -1201,27 +1415,61 @@ footer .copyright {
 
   #banner3 .banner-box {
     width: 100%;
-  }
-
-  #newslatter {
-    padding: 40px 20px;
-  }
-
-  #newslatter .form {
-    width: 100%;
-  }
-
-  /*Shop header image*/
-
-  #page-header {
-    background-image: url("img/banner/b7.webp");
-    background-size: cover;
+    background-size: 80% !important;
     background-position: center;
+    height: 30vh;
+  }
 
+  #banner3 .banner-box2 {
+    background-size: cover !important;
+  }
+
+  #banner3 .banner-box3 {
+    background-size: contain !important;
+    /* Ensures the full image is visible */
+    background-position: center center !important;
+    /* Centers the image */
+    background-repeat: no-repeat;
+    /* Prevents tiling */
+    height: 30vh;
 
   }
+}
+
+#newslatter {
+  padding: 40px 80px;
+}
+
+
+
+@media (max-width: 360px) {
+  #sm-banner .banner-box2 {
+    height: 30vh;
+    padding: 20px;
+    justify-content: flex-start;
+  }
+
+  #sm-banner .banner-box2 h4,
+  #sm-banner .banner-box2 h2,
+  #sm-banner .banner-box2 span,
+  #sm-banner .banner-box2 button {
+    position: relative;
+    z-index: 2;
+    max-width: 100%;
+  }
+}
+
+/*Shop header image*/
+
+#page-header {
+  background-image: url("img/banner/b7.webp");
+  background-size: cover;
+  background-position: center;
+
 
 }
+
+
 
 /* Single Product */
 

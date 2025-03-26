@@ -34,6 +34,15 @@
           <li id="lg-bag">
             <a href="cart.html"><i class="far fa-shopping-cart"></i></a>
           </li>
+          <li id="user-menu" class="dropdown" style="display: none">
+            <span id="user-name" class="dropdown-toggle">Usuario ▼</span>
+            <ul class="dropdown-menu">
+              <li><a href="#">Mi cuenta</a></li>
+              <li><a href="#">Mis pedidos</a></li>
+              <li><a href="#">Configuración</a></li>
+              <li><a href="#" id="logout-btn">Cerrar sesión</a></li>
+            </ul>
+          </li>
           <a href="#" id="close"><i class="far fa-times"></i></a>
         </ul>
       </div>
@@ -42,6 +51,18 @@
         <i id="bar" class="fas fa-outdent"></i>
       </div>
     </section>
+
+    <!-- Sección de autenticación 
+    <div id="auth-wrapper">
+      <div id="auth-section">
+        <h2>Bienvenido</h2>
+        <button id="login-btn">Iniciar sesión con Google</button>
+      </div>
+    </div> -->
+    
+
+    <!-- Sección de la tienda (oculta hasta autenticarse) -->
+    <section id="shop-section" style="display: none;">
 
     <!-- Hero: Fotografía Juan cruzado de brazos, titulos y parrafos de oferta -->
 
@@ -55,7 +76,7 @@
       <a class="hero__button" href="shop.html"><button>Shop Now</button></a>
     </section>
 
-    <!-- Domicili local, Pedido en Linea, Ahorra Dinero, etc... -->
+    <!-- Domicilio local, Pedido en Linea, Ahorra Dinero, etc... -->
 
     <section id="feature" class="section-p1">
       <div class="fe-box">
@@ -90,466 +111,8 @@
       <h2>Productos destacados</h2>
       <p>Nuevos Diseños Modernos, Colección de Verano</p>
 
-      <div class="pro-container">
-        <!-- Primer producto, morral color negro de senderismo 10 libras -->
-        <div class="pro" onclick="window.location.href='sproduct.html'">
-          <img src="img/products/f1.webp" alt="first product" />
-          <div class="des">
-            <span>Morrales Quechua</span>
-            <h5>Morral de senderismo 10l nh arpenaz 50 Negro</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>$40.000 Pesos</h4>
-          </div>
-          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-        </div>
-
-        <!-- Segundo producto, morral color vinotinto de senderismo 10 libras -->
-        <div class="pro" onclick="window.location.href='sproduct1.html'">
-          <img src="img/products/f2.webp" alt="second product" />
-          <div class="des">
-            <span>Morrales Quechua</span>
-            <h5>Morral de senderismo 10l nh arpenaz 50 Morado</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>$40.000 Pesos</h4>
-          </div>
-          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-        </div>
-
-        <!-- Tercer producto, morral color azul oscuro de senderismo 10 libras -->
-        <div class="pro" onclick="window.location.href='sproduct2.html'">
-          <img src="img/products/f3.webp" alt="third product" />
-          <div class="des">
-            <span>Morrales Quechua</span>
-            <h5>Morral de senderismo 10l nh arpenaz 50 Gris</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>$40.000 Pesos</h4>
-          </div>
-          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-        </div>
-
-        <!-- Cuarto producto, morral color azul claro de senderismo 10 libras -->
-        <div class="pro" onclick="window.location.href='sproduct3.html'">
-          <img src="img/products/f4.webp" alt="fourth product" />
-          <div class="des">
-            <span>Morrales Quechua</span>
-            <h5>Morral de senderismo 10l nh arpenaz 50 Azul</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>$40.000 Pesos</h4>
-          </div>
-          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-        </div>
-
-        <!-- Quinto producto, morral color negro de senderismo 10 libras -->
-        <div class="pro" onclick="window.location.href='sproduct4.html'">
-          <img src="img/products/f5.webp" alt="fifth product" />
-          <div class="des">
-            <span>Morrales Quechua</span>
-            <h5>Morral de senderismo 10l nh arpenaz 50 Verde con flores</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>$40.000 Pesos</h4>
-          </div>
-          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-        </div>
-
-        <!-- Sexto producto -->
-        <div class="pro">
-          <img src="img/products/f6.webp" alt="sixth product" />
-          <div class="des">
-            <span>DOMYOS</span>
-            <h5>
-              Camiseta manga corta gimnasia infantil 100% algodon niño azul
-              estampado
-            </h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>$40.000 Pesos</h4>
-          </div>
-          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-        </div>
-
-        <!-- Septimo producto -->
-        <div class="pro">
-          <img src="img/products/f7.webp" alt="seventh product" />
-          <div class="des">
-            <span>OLAIAN</span>
-            <h5>Chanclas niños azul</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>$40.000 Pesos</h4>
-          </div>
-          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-        </div>
-
-        <!-- Octavo producto -->
-        <div class="pro">
-          <img src="img/products/f8.webp" alt="eighth product" />
-          <div class="des">
-            <span>FORCLAZ</span>
-            <h5>Gorra trekking viaje travel azul marino</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>$40.000 Pesos</h4>
-          </div>
-          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-        </div>
-
-        <!-- Noveno producto -->
-        <div class="pro">
-          <img src="img/products/f9.webp" alt="nineth product" />
-          <div class="des">
-            <span>DOMYOS</span>
-            <h5>Tula calzado fitness plegable rosa coral</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>$30.000 Pesos</h4>
-          </div>
-          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-        </div>
-
-        <!-- Decimo producto -->
-        <div class="pro">
-          <img src="img/products/f10.webp" alt="eleventh product" />
-          <div class="des">
-            <span>OLAIAN</span>
-            <h5>Chanclas niñas rosado</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>$40.000 Pesos</h4>
-          </div>
-          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-        </div>
-
-        <!-- undécimo producto -->
-        <div class="pro">
-          <img src="img/products/f11.webp" alt="twelfth product" />
-          <div class="des">
-            <span>DOMYOS</span>
-            <h5>Tula calzado fitness negro plegable</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>$30.000 Pesos</h4>
-          </div>
-          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-        </div>
-
-        <!-- Duodécimo producto -->
-        <div class="pro">
-          <img src="img/products/f12.webp" alt=" product" />
-          <div class="des">
-            <span>NABAIJI</span>
-            <h5>
-              Toalla microfibra talla M 60 x 80cm turquesa, natación nabaiji
-            </h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>$40.000 Pesos</h4>
-          </div>
-          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Bisituria y Hecho a mano -->
-
-    <section id="banner" class="section-m1">
-      <h4>Hecho a Mano</h4>
-      <h2>
-        Descuento <span>Hasta 10%</span>- Todo en Bisitureria y Artesanias
-      </h2>
-      <button class="normal">Explora Mas</button>
-    </section>
-
-    <section id="product1" class="section-p1">
-      <h2>Nuevos Estilos</h2>
-      <p>Nuevos Diseños Modernos, Colección de Todas las Estaciones</p>
-
-      <div class="pro-container">
-        <!-- Decimotercer producto -->
-        <div class="pro">
-          <img src="img/products/n1.webp" alt="first product" />
-          <div class="des">
-            <span>Morrales Quechua</span>
-            <h5>Morral de senderismo 10l nh arpenaz 50 Negro</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>$35.000 Pesos</h4>
-          </div>
-          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-        </div>
-
-        <!-- Decimocuarto producto -->
-        <div class="pro">
-          <img src="img/products/n2.webp" alt="second product" />
-          <div class="des">
-            <span>Morrales Quechua</span>
-            <h5>Morral de senderismo 10l nh arpenaz 50 Morado</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>$35.000 Pesos</h4>
-          </div>
-          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-        </div>
-
-        <!-- Decimoquinto producto -->
-        <div class="pro">
-          <img src="img/products/n3.webp" alt="third product" />
-          <div class="des">
-            <span>Morrales Quechua</span>
-            <h5>Morral de senderismo 10l nh arpenaz 50 Gris</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>$35.000 Pesos</h4>
-          </div>
-          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-        </div>
-
-        <!-- Decimosexto producto -->
-        <div class="pro">
-          <img src="img/products/n4.webp" alt="fourth product" />
-          <div class="des">
-            <span>Morrales Quechua</span>
-            <h5>Morral de senderismo 10l nh arpenaz 50 Azul</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>$35.000 Pesos</h4>
-          </div>
-          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-        </div>
-
-        <!-- Decimoséptimo producto -->
-        <div class="pro">
-          <img src="img/products/n5.webp" alt="fifth product" />
-          <div class="des">
-            <span>Morrales Quechua</span>
-            <h5>Morral de senderismo 10l nh arpenaz 50 Verde con flores</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>$35.000 Pesos</h4>
-          </div>
-          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-        </div>
-
-        <!-- Decimoctavo producto -->
-        <div class="pro">
-          <img src="img/products/n6.webp" alt="sixth product" />
-          <div class="des">
-            <span>DOMYOS</span>
-            <h5>
-              Camiseta manga corta gimnasia infantil 100% algodon niño azul
-              estampado
-            </h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>$35.000 Pesos</h4>
-          </div>
-          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-        </div>
-
-        <!-- Decimonoveno producto -->
-        <div class="pro">
-          <img src="img/products/n7.webp" alt="seventh product" />
-          <div class="des">
-            <span>OLAIAN</span>
-            <h5>Chanclas niños azul</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>$35.000 Pesos</h4>
-          </div>
-          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-        </div>
-
-        <!-- Vigésimo producto -->
-        <div class="pro">
-          <img src="img/products/n8.webp" alt="eighth product" />
-          <div class="des">
-            <span>FORCLAZ</span>
-            <h5>Gorra trekking viaje travel azul marino</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>$40.000 Pesos</h4>
-          </div>
-          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-        </div>
-
-        <!-- Vigésimo primer producto -->
-        <div class="pro">
-          <img src="img/products/f9.webp" alt="nineth product" />
-          <div class="des">
-            <span>DOMYOS</span>
-            <h5>Tula calzado fitness plegable rosa coral</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>$30.000 Pesos</h4>
-          </div>
-          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-        </div>
-
-        <!-- Vigésimo segundo producto -->
-        <div class="pro">
-          <img src="img/products/f10.webp" alt="eleventh product" />
-          <div class="des">
-            <span>OLAIAN</span>
-            <h5>Chanclas niñas rosado</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>$40.000 Pesos</h4>
-          </div>
-          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-        </div>
-
-        <!-- Vigésimo tercer producto -->
-        <div class="pro">
-          <img src="img/products/f11.webp" alt="twelfth product" />
-          <div class="des">
-            <span>DOMYOS</span>
-            <h5>Tula calzado fitness negro plegable</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>$30.000 Pesos</h4>
-          </div>
-          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-        </div>
-
-        <!-- Vigésimo cuarto producto -->
-        <div class="pro">
-          <img src="img/products/f12.webp" alt=" product" />
-          <div class="des">
-            <span>NABAIJI</span>
-            <h5>
-              Toalla microfibra talla M 60 x 80cm turquesa, natación nabaiji
-            </h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>$40.000 Pesos</h4>
-          </div>
-          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-        </div>
-      </div>
+      <!-- Contenedor vacío donde JavaScript inyectará los productos -->
+      <div class="pro-container"></div>
     </section>
 
     <!-- Tratos de Locura con botones Aprenda mas y Colecciones -->
@@ -557,7 +120,7 @@
     <section id="sm-banner" class="section-p1">
       <div class="banner-box">
         <h4>Tratos de Locura</h4>
-        <h2>Grandes Promociones</h2>
+        <h2>Grandes Ofertas</h2>
         <span
           >Los mejores productos y calidad los encuentras en Juan Salvador'Shop
         </span>
@@ -565,7 +128,7 @@
       </div>
       <div class="banner-box banner-box2">
         <h4>Otoño/Invierno</h4>
-        <h2>Próximas Estaciones</h2>
+        <h2>Nueva Colección</h2>
         <span
           >Los mejores productos y calidad los encuentras en Juan Salvador' Shop
         </span>
@@ -660,7 +223,13 @@
         <p>© 2023. Tienda Juan Salvador Cortes Rodriguez</p>
       </div>
     </footer>
+      <!-- ✅ Importar configuración de Firebase (Siempre antes que otros scripts) -->
+      <script type="module" src="firebase-config.js"></script>
 
-    <script src="script.js"></script>
+      <!-- ✅ Script del carrito (No es módulo, usa `defer`) -->
+      <script src="cart.js" defer></script>
+
+      <!-- ✅ Script principal (Es módulo, `type="module"`) -->
+    <script type="module" src="script.js"></script>
   </body>
 </html>

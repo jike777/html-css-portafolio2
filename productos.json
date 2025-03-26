@@ -1,0 +1,234 @@
+[
+  {
+    "id": 1,
+    "nombre": "T-shirt 100% algodón",
+    "marca": "Quechua",
+    "categoria": "Mountains / Trekking T-shirt",
+    "imagen": "../img/products/acaccesorios-escritorio/estuchera-utiles-escolares-1.webp",
+    "descripcion": "Morral de senderismo 10L NH Arpenaz 50, ideal para trekking y senderismo.",
+    "precio": 40000,
+    "estrellas": 5,
+    "info_tecnica": "INFORMACIÓN TÉCNICA: Material resistente al agua con costuras reforzadas. Diseño ergonómico para mayor comodidad. Ligero y fácil de transportar.",
+    "imagenes": [
+      "img/products/estuchera-utiles-escolares-1.webp",
+      "img/products/accesorios-escritorio/estuchera-utiles-escolares-1.webp",
+      "img/products/n5.webp",
+      "img/products/n6.webp"
+    ]
+  },
+  {
+    "id": 2,
+    "nombre": "Morral de senderismo 10L Morado",
+    "marca": "Quechua",
+    "categoria": "Mountains / Trekking Bags",
+    "imagen": "./img/products/",
+    "descripcion": "Morral de senderismo 10L NH Arpenaz 50 Morado",
+    "precio": 40000,
+    "estrellas": 5,
+    "info_tecnica": "INFORMACIÓN TÉCNICA NUESTRA ESTRATEGIA AMBIENTAL El teñido de las telas gasta mucha agua y vierte muchas aguas residuales al ambiente. Para reducir este impacto, utilizamos 2 procesos de teñido: 1. No teñimos el hilo de la tela interior.2. Teñimos en masa, integrando los pigmentos de color desde la fabricación del hilo, para la tela externa color azul, negro y caqui.",
+    "imagenes": [
+      "img/products/accesorios-escritorio/estuchera-utiles-escolares-1.webp",
+      "img/products/f3.webp",
+      "img/products/f4.webp",
+      "img/products/f5.webp"
+    ]
+  },
+  {
+    "id": 3,
+    "nombre": "Morral de senderismo 10L Gris",
+    "marca": "Quechua",
+    "imagen": "img/products/f3.webp",
+    "descripcion": "Morral de senderismo 10L NH Arpenaz 50 Gris",
+    "precio": 40000,
+    "estrellas": 5
+  },
+  {
+    "id": 4,
+    "nombre": "Morral de senderismo 10L Azul",
+    "marca": "Quechua",
+    "imagen": "img/products/f4.webp",
+    "descripcion": "Morral de senderismo 10L NH Arpenaz 50 Azul",
+    "precio": 40000,
+    "estrellas": 5
+  },
+  {
+    "id": 5,
+    "nombre": "Tula calzado fitness negro",
+    "marca": "DOMYOS",
+    "imagen": "img/products/f11.webp",
+    "descripcion": "Tula calzado fitness negro plegable",
+    "precio": 30000,
+    "estrellas": 5
+  },
+  {
+    "id": 6,
+    "nombre": "Toalla microfibra azul",
+    "marca": "NABAIJI",
+    "imagen": "img/products/f12.webp",
+    "descripcion": "Toalla microfibra talla M 60 x 80cm turquesa",
+    "precio": 40000,
+    "estrellas": 5
+  },
+  {
+    "id": 7,
+    "nombre": "Chanclas niños azul",
+    "marca": "OLAIAN",
+    "imagen": "img/products/f7.webp",
+    "descripcion": "Chanclas para niños color azul",
+    "precio": 40000,
+    "estrellas": 5
+  },
+  {
+    "id": 8,
+    "nombre": "Gorra trekking azul marino",
+    "marca": "FORCLAZ",
+    "imagen": "img/products/f8.webp",
+    "descripcion": "Gorra para trekking y viaje color azul marino",
+    "precio": 40000,
+    "estrellas": 5
+  },
+  {
+    "id": 9,
+    "nombre": "Camiseta manga corta azul",
+    "marca": "DOMYOS",
+    "imagen": "img/products/f6.webp",
+    "descripcion": "Camiseta gimnasia infantil 100% algodón",
+    "precio": 35000,
+    "estrellas": 5
+  },
+  {
+    "id": 10,
+    "nombre": "Tula calzado fitness rosa",
+    "marca": "DOMYOS",
+    "imagen": "img/products/f9.webp",
+    "descripcion": "Tula calzado fitness plegable rosa coral",
+    "precio": 30000,
+    "estrellas": 5
+  },
+  {
+    "id": 11,
+    "nombre": "Chanclas niñas rosado",
+    "marca": "OLAIAN",
+    "imagen": "img/products/f10.webp",
+    "descripcion": "Chanclas para niñas color rosado",
+    "precio": 40000,
+    "estrellas": 5
+  },
+  {
+    "id": 12,
+    "nombre": "Camiseta deportiva verde",
+    "marca": "DOMYOS",
+    "imagen": "img/products/n1.webp",
+    "descripcion": "Camiseta manga corta para deportes color verde",
+    "precio": 35000,
+    "estrellas": 5
+  },
+  {
+    "id": 13,
+    "nombre": "Morral senderismo 20L Gris",
+    "marca": "Quechua",
+    "imagen": "img/products/n2.webp",
+    "descripcion": "Morral para senderismo de 20L color gris",
+    "precio": 60000,
+    "estrellas": 5
+  },
+  {
+    "id": 14,
+    "nombre": "Gorra para running roja",
+    "marca": "KALENJI",
+    "imagen": "img/products/n3.webp",
+    "descripcion": "Gorra deportiva para running, transpirable y ligera",
+    "precio": 25000,
+    "estrellas": 4
+  },
+  {
+    "id": 15,
+    "nombre": "Mallas deportivas negras",
+    "marca": "DOMYOS",
+    "imagen": "img/products/n4.webp",
+    "descripcion": "Mallas largas deportivas para entrenamiento y yoga",
+    "precio": 55000,
+    "estrellas": 5
+  },
+  {
+    "id": 16,
+    "nombre": "Sudadera deportiva gris",
+    "marca": "DOMYOS",
+    "imagen": "img/products/n5.webp",
+    "descripcion": "Sudadera ligera y transpirable para entrenamiento",
+    "precio": 75000,
+    "estrellas": 5
+  },
+  {
+    "id": 17,
+    "nombre": "Short deportivo azul",
+    "marca": "DOMYOS",
+    "imagen": "img/products/n6.webp",
+    "descripcion": "Short de secado rápido para running y entrenamiento",
+    "precio": 45000,
+    "estrellas": 4
+  },
+  {
+    "id": 18,
+    "nombre": "Pantalón trekking impermeable",
+    "marca": "FORCLAZ",
+    "imagen": "img/products/n7.webp",
+    "descripcion": "Pantalón resistente al agua para senderismo y montaña",
+    "precio": 120000,
+    "estrellas": 5
+  },
+  {
+    "id": 19,
+    "nombre": "Chaqueta térmica senderismo",
+    "marca": "QUECHUA",
+    "imagen": "img/products/n8.webp",
+    "descripcion": "Chaqueta térmica y cortaviento para trekking y senderismo",
+    "precio": 180000,
+    "estrellas": 5
+  },
+  {
+    "id": 20,
+    "nombre": "Calcetines térmicos de montaña",
+    "marca": "QUECHUA",
+    "imagen": "img/products/n9.webp",
+    "descripcion": "Calcetines gruesos y térmicos ideales para trekking en frío",
+    "precio": 25000,
+    "estrellas": 5
+  },
+  {
+    "id": 21,
+    "nombre": "Guantes táctiles para invierno",
+    "marca": "FORCLAZ",
+    "imagen": "img/products/n10.webp",
+    "descripcion": "Guantes térmicos compatibles con pantallas táctiles",
+    "precio": 35000,
+    "estrellas": 4
+  },
+  {
+    "id": 22,
+    "nombre": "Camiseta térmica manga larga",
+    "marca": "DOMYOS",
+    "imagen": "img/products/n11.webp",
+    "descripcion": "Camiseta interior térmica para deportes en clima frío",
+    "precio": 55000,
+    "estrellas": 5
+  },
+  {
+    "id": 23,
+    "nombre": "Mochila de viaje 40L",
+    "marca": "FORCLAZ",
+    "imagen": "img/products/n12.webp",
+    "descripcion": "Mochila de gran capacidad para viajes largos y senderismo",
+    "precio": 220000,
+    "estrellas": 5
+  },
+  {
+    "id": 24,
+    "nombre": "Lámpara frontal recargable",
+    "marca": "QUECHUA",
+    "imagen": "img/products/n13.webp",
+    "descripcion": "Linterna frontal LED con batería recargable para camping",
+    "precio": 80000,
+    "estrellas": 5
+  }
+]
