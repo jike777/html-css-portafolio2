@@ -3,7 +3,7 @@ name: Deploy to Firebase
 on:
   push:
     branches:
-      - main # Cambia "main" si tu rama principal tiene otro nombre
+      - main # Asegúrate de que tu rama principal sea "main"
 
 jobs:
   deploy:
@@ -11,10 +11,10 @@ jobs:
 
     steps:
       - name: 📂 Checkout del código
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4 # ✅ Corregido
 
       - name: 🔧 Configurar Node.js
-        uses: actions/setup-node@v18
+        uses: actions/setup-node@v3
         with:
           node-version: 18
 
