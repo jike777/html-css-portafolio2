@@ -1,5 +1,5 @@
 // ✅ Importar Firebase desde firebase-config.js
-import { auth, provider } from './firebase-config.js';
+import { auth, provider } from '../firebase-config.js';
 import {
   signInWithPopup,
   onAuthStateChanged,
